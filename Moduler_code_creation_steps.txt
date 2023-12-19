@@ -1,0 +1,15 @@
+Moduler code steps
+
+once src folder created
+inside create mcqgenrator folder & __init__file for consider this src as local pacakge & will install while requirements.txt execute ( -e .)
+Now insider the mcqgenrator create two more files
+logger.py - to log the entire executing
+untils.py - to capture all helper functions
+create MCQGenerator.py - to write all logic
+in root folder create Response.json file - copy the respinse info from jupyter notebook from experiment folder
+create StreamlitAPP.py to write logic related to StreamlitAPP
+
+Now inside the logger file write the logging logic
+create test.py to check logging is working or not
+inside the just basic logging command   ( using import from local mcqgenrator folder)
+now execute the test.py & ensure that log is created

@@ -1,0 +1,54 @@
+First create the virtual envoriment
+create requirments.txt file & specify the required files
+Create the setup.py file to install the local folder package
+Create the src folder - inside that create __init__.py file
+Create the mcqgenrator folder - This folder will act as local package folder when we provide __init__.py
+create the experiment folder & create .ipynb file
+update the setup.py with required details
+add -e . inside the requirements.txt file - This will install the all package defined inside the current folder/current repo
+give the command pip list we can see the local package mcqgenrator installed
+we can see all meta data info into mcqgenrator.egg-info
+
+Open the experiment folder & do the experiment
+
+
+Import the requirted lib
+import the open api key
+create llm model obsject using key,model name & temperature 
+
+
+Now import the required lib for lang chain
+
+Now define the prompt template
+
+input varibale =  input_variables=["text", "number", "subject", "tone", "response_json"],
+
+Template format = example text format
+
+Also mention the response in json format like question, choice, answer
+
+
+If we are not specify the response format we can ask like plain engligh writer format
+
+# Create the chain object & map the output into quiz varibale
+
+
+next write the template to validate the quiz evaltion created by open API
+
+Two input subject and quiz which we got the reposnse from first chain
+
+
+Now we have two chain. using sequential chain we can connect the both chain
+
+create the text using file 
+read the text file & assign to Text input variable
+Now serialize the diectionary into JSON format to use json dump
+define the input varibale
+
+NUMBER=5 
+SUBJECT="biology"
+TONE="simple"
+
+get_openai_callback Call function to track the input and output tokens
+
+print # Using this get_openai_callback we can see number input tocken,output token & cost
